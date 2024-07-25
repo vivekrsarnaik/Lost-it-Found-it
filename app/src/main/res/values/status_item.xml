@@ -1,0 +1,8 @@
+<resources>
+    <string name="lost_it_found_it">Drop Down Example</string>
+    <string name="hint_resource">Select item status …</string>
+    <string-array name="status">
+        <item>Lost</item>
+        <item>Found</item>
+    </string-array>
+</resources>

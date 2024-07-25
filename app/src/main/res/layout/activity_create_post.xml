@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatePostActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImg2"
+        android:layout_width="904dp"
+        android:layout_height="1285dp"
+        android:contentDescription="@string/background"
+        android:pointerIcon="top_right_diagonal_double_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="413dp"
+        android:layout_height="440dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:srcCompat="@android:drawable/spinner_background" />
+
+    <Button
+        android:id="@+id/postBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="Post"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/reportDate"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
+        android:drawableStart="@drawable/baseline_date_range_24"
+        android:drawablePadding="2dp"
+        android:ems="10"
+        android:hint="Report Date"
+        android:inputType="date"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/itemDescription"
+        android:layout_width="327dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="112dp"
+        android:drawableStart="@drawable/baseline_description_24"
+        android:ems="10"
+        android:gravity="bottom|start|top"
+        android:hint="Describe the Item"
+        android:inputType="textMultiLine|text"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/postBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportDate"
+        app:layout_constraintVertical_bias="0.949" />
+
+    <TextView
+        android:id="@+id/createPostText"
+        android:layout_width="271dp"
+        android:layout_height="79dp"
+        android:text="Create Post"
+        android:textAlignment="center"
+        android:textColor="#302F2F"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <TextView
+        android:id="@+id/createPostBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="307dp"
+        android:drawableStart="@drawable/baseline_arrow_back_ios_24"
+        android:text="Back"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/statusOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/itemName"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:drawableStart="@drawable/baseline_border_color_24"
+        android:hint="Item Name"
+        android:padding="2dp"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/itemDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportDate"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <ImageView
+        android:id="@+id/addLocation"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/addImage"
+        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemDescription"
+        app:srcCompat="@drawable/baseline_add_location_alt_24" />
+
+    <ImageView
+        android:id="@+id/addImage"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemDescription"
+        app:srcCompat="@drawable/baseline_add_a_photo_24" />
+
+    <Spinner
+        android:id="@+id/statusOptions"
+        android:layout_width="327dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="4dp"
+        android:background="?attr/colorControlHighlight"
+        android:entries="@array/status"
+        android:pointerIcon="arrow"
+        android:prompt="@string/hint_resource"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/itemDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

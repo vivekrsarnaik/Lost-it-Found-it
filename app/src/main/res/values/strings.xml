@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LostItFoundIt</string>
+    <string name="background">background</string>
+    <!--    <string name="app_name">Navigation Drawer</string>-->
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+</resources>
